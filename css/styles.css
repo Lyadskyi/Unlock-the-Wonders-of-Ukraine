@@ -7,10 +7,19 @@ ol {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
+  font-family: "Jomolhari", "Lato", sans-serif;
+  color: #fff;
   background-color: #141a19;
 }
+
+/* :root {
+--non-active: #5a5959;
+--white: #fff;
+--but: #394014;
+--stars: #ae990b;
+--bg: #141a19;
+--input: #b9b9b9;
+} */
 
 img {
   display: block;
@@ -29,4 +38,93 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1440px;
+    height: 800px;
+  }
+  /* sec-hero */
+  .sec-hero {
+    background-image: url("../images/hero/hero-desk.jpg");
+    background-size: cover; /* Робить зображення повністю відповідним */
+    background-repeat: no-repeat; /* Забороняє повторення */
+    background-position: center; /* Центрує зображення */
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2ddpx) and (min-width: 1158px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .sec-hero {
+      background-image: url("../images/RETINA/hero/hero@2x-desk.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  @media screen and (min-resolution: 288dpi) and (min-width: 1158px),
+    screen and (min-resolution: 3dppx) and (min-width: 1158px),
+    screen and (min-device-pixel-ratio: 3) and (min-width: 1158px) {
+    .sec-hero {
+      background-image: url("../images/RETINA/hero/hero@3x-desk.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-hero-title {
+    font-family: "Jomolhari";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    width: 468px;
+    height: 134px;
+    color: #fff;
+  }
+  .ukraine {
+    position: relative;
+    display: inline-block;
+    font-family: "Jomolhari";
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #fff;
+  }
+  .ukraine::after {
+    content: "Ukraine";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    transform: scaleY(-1);
+    opacity: 0.3;
+    background: linear-gradient(2deg, #fff 0%, rgba(255, 255, 255, 0) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn-hero {
+    display: block;
+    font-family: "Jomolhari";
+    border-radius: 4px;
+    border: none;
+    padding: 16px 52px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: #394014;
+    color: #fff;
+  }
 }
