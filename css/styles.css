@@ -153,26 +153,64 @@ ol {
   }
   /* sec-Our-tours */
   .sec-our-tours {
+    position: relative; /* Контейнер для абсолютного позиціонування */
     height: 1271px;
+  }
+  .sec-our-tours h1 {
+    position: absolute; /* Абсолютне позиціонування відносно .sec-our-tours */
+    left: 50%; /* 50% від ширини секції */
+    transform: translate(-50%); /* Здвигаю елемент на 50% своєї ширини */
+  }
+  .sec-our-tours-title {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #fff;
   }
   /* sec-Gallery */
   .sec-gallery {
+    position: relative;
     height: 711px;
+    display: flex;
+    justify-content: center; /* Рівномірне розташування */
+    gap: 16px; /* Відстань між картинками */
+    padding: 20px;
+  }
+  .sec-gallery h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .sec-gallery img {
+    width: 100%; /* Адаптивні зображення */
+    max-width: 400px; /* Максимальна ширина */
+    /* height: auto; */
+    border-radius: 4px;
+  }
+  .sec-gallery-title {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #fff;
   }
   /* sec-Reviews */
   .sec-reviews {
-    position: relative; /* Контейнер для абсолютного позиціонування */
+    position: relative;
     height: 698px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background: linear-gradient(360deg, #141a19 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 100%),
       url("../images/reviews/reviews-bg-desk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .sec-reviews h1 {
-    position: absolute; /* Абсолютне позиціонування відносно .sec-reviews */
+    position: absolute;
     top: 64px; /* 64px від верхнього краю секції */
-    left: 603px; /* 603px від лівого краю секції */
+    left: 50%;
+    transform: translate(-50%);
   }
   .sec-reviews-title {
     font-family: "Lato";
@@ -185,9 +223,28 @@ ol {
   /* sec-Start-travel */
   .sec-start-travel {
     height: 840px;
+    background: url("../images/start-travel/wheat-desk.jpg");
+    background-repeat: no-repeat;
   }
   /* Footer */
   .footer {
     height: 324px;
+  }
+  .scroll-top {
+    position: fixed; /* Фіксована позиція */
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: olive; /* Колір кнопки */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /* display: none; Початково приховати */
+    transition: opacity 0.3s;
+  }
+  .scroll-top:hover {
+    background-color: darkolivegreen;
   }
 }
