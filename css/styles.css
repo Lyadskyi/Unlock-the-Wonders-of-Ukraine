@@ -49,17 +49,49 @@ ol {
     margin-left: 24px;
     margin-right: 24px;
   }
+
   .section {
     margin-bottom: 100px;
   }
+
   /* Header */
+  .header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .navigation-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 64px;
+  }
+
+  .navigation-link-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #fff;
+  }
+
   .nav-link {
     text-decoration: none;
     color: inherit;
   }
+
   /* sec-Hero */
   .sec-hero {
-    height: 800px;
+    height: 100vh;
     margin-bottom: 113px;
     background-image: url("../images/hero/hero-desk.jpg");
     background-size: cover; /* Робить зображення повністю відповідним */
@@ -86,11 +118,13 @@ ol {
       background-position: center;
     }
   }
+
   .hero {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .sec-hero-title {
     padding-top: 144px;
     width: 468px;
@@ -100,9 +134,9 @@ ol {
     line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: center;
-
     color: #fff;
   }
+
   .ukraine {
     position: relative;
     display: inline-block;
@@ -113,6 +147,7 @@ ol {
     letter-spacing: 0.01em;
     color: #fff;
   }
+
   .ukraine::after {
     content: "Ukraine";
     position: absolute;
@@ -126,6 +161,7 @@ ol {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .btn-hero {
     margin-right: auto;
     margin-left: auto;
@@ -143,24 +179,46 @@ ol {
     background: #394014;
     color: #fff;
   }
+
   .btn-link {
     text-decoration: none; /* Прибирає підкреслення */
     color: inherit; /* Залишає колір тексту, як у батьківського елемента */
   }
+
   /* sec-About-us */
   .sec-about-us {
     height: 573px;
   }
+
+  .about-us {
+    display: flex;
+    padding: 0 200px;
+    width: 1024px;
+    height: 338px;
+    gap: 32px;
+  }
+
+  .text {
+    /* font-family: "Jomolhari"; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #fff;
+  }
+
   /* sec-Our-tours */
   .sec-our-tours {
     position: relative; /* Контейнер для абсолютного позиціонування */
     height: 1271px;
   }
+
   .sec-our-tours h1 {
     position: absolute; /* Абсолютне позиціонування відносно .sec-our-tours */
     left: 50%; /* 50% від ширини секції */
     transform: translate(-50%); /* Здвигаю елемент на 50% своєї ширини */
   }
+
   .sec-our-tours-title {
     font-family: "Lato";
     font-weight: 400;
@@ -169,6 +227,7 @@ ol {
     letter-spacing: 0.01em;
     color: #fff;
   }
+
   /* sec-Gallery */
   .sec-gallery {
     position: relative;
@@ -178,17 +237,20 @@ ol {
     gap: 16px; /* Відстань між картинками */
     padding: 20px;
   }
+
   .sec-gallery h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
   }
+
   .sec-gallery img {
     width: 100%; /* Адаптивні зображення */
     max-width: 400px; /* Максимальна ширина */
     /* height: auto; */
     border-radius: 4px;
   }
+
   .sec-gallery-title {
     font-family: "Lato";
     font-weight: 400;
@@ -197,6 +259,7 @@ ol {
     letter-spacing: 0.01em;
     color: #fff;
   }
+
   /* sec-Reviews */
   .sec-reviews {
     position: relative;
@@ -206,12 +269,14 @@ ol {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .sec-reviews h1 {
     position: absolute;
     top: 64px; /* 64px від верхнього краю секції */
     left: 50%;
     transform: translate(-50%);
   }
+
   .sec-reviews-title {
     font-family: "Lato";
     font-weight: 400;
@@ -220,31 +285,47 @@ ol {
     letter-spacing: 0.01em;
     color: #fff;
   }
+
   /* sec-Start-travel */
   .sec-start-travel {
     height: 840px;
     background: url("../images/start-travel/wheat-desk.jpg");
     background-repeat: no-repeat;
   }
+
   /* Footer */
   .footer {
     height: 324px;
   }
-  .scroll-top {
-    position: fixed; /* Фіксована позиція */
+
+  /* .scroll-top {
+    position: fixed; Фіксована позиція
     bottom: 40px;
     right: 40px;
     padding: 10px 15px;
     font-size: 16px;
-    background-color: olive; /* Колір кнопки */
+    background-color: olive; Колір кнопки
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    /* display: none; Початково приховати */
+    display: none; Початково приховати
     transition: opacity 0.3s;
   }
+
   .scroll-top:hover {
     background-color: darkolivegreen;
+  } */
+
+  .icon-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: url("/images/png/Two_tree.png") no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
   }
 }
