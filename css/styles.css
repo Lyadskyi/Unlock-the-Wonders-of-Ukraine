@@ -120,7 +120,7 @@ ol {
     screen and (min-resolution: 2ddpx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/hero@2x-desk.jpg");
+      background-image: url("../images/RETINA/hero/desktop/hero@2x-desk.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -130,7 +130,7 @@ ol {
     screen and (min-resolution: 3dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/hero@3x-desk.jpg");
+      background-image: url("../images/RETINA/hero/desktop/hero@3x-desk.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -273,7 +273,7 @@ ol {
     position: relative;
     height: 698px;
     background: linear-gradient(360deg, #141a19 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 100%),
-      url("../images/reviews/reviews-bg-desk.jpg");
+      url("../images/reviews/desktop/reviews-bg-desk.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -295,7 +295,7 @@ ol {
   /* sec-Start-travel */
   .sec-start-travel {
     height: 840px;
-    background: url("../images/start-travel/wheat-desk.jpg");
+    background: url("../images/start-travel/desktop/wheat-desk.jpg");
     background-repeat: no-repeat;
   }
 
