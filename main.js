@@ -3,7 +3,7 @@ $(window).scroll(function () {
 
   console.log(scrolled);
 
-  if (scrolled > 400) {
+  if (scrolled > 200) {
     $("#back_to_top").addClass("active");
   } else {
     $("#back_to_top").removeClass("active");
