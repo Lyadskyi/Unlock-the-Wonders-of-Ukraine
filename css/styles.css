@@ -322,14 +322,21 @@ ol {
     background-color: darkolivegreen;
   } */
 
-  .icon-button {
+  .back-to-top {
     position: fixed;
-    bottom: 40px;
+    bottom: -40px;
     right: 40px;
-    width: 50px;
-    height: 50px;
+    transition: 0.5s linear;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     background: url("/images/png/free-icon-pine.webp") no-repeat center center;
     background-size: contain;
     border: none;
+  }
+
+  .back-to-top.active {
+    bottom: 40px;
+    transition: 0.5s linear;
   }
 }
