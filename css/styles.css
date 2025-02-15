@@ -8,21 +8,21 @@
 }*/
 
 @font-face {
-  font-family: "Jomolhari";
-  src: url("../fonts/Jomolhari-Regular.woff2") format("woff2"), url("../fonts/Jomolhari-Regular.woff") format("woff");
+  font-family: 'Jomolhari';
+  src: url('../fonts/Jomolhari-Regular.woff2') format('woff2'), url('../fonts/Jomolhari-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  font-family: "Jomolhari", "Lato", sans-serif;
+  font-family: 'Jomolhari', 'Lato', sans-serif;
   color: #fff;
   background-color: #141a19;
 }
@@ -69,7 +69,7 @@ ol {
   .sec-hero {
     height: 100vh;
     margin-bottom: 100px;
-    background-image: url("../images/hero/hero_bg-mob.webp");
+    background-image: url('../images/hero/hero_bg-mob.webp');
     background-size: cover; /* Робить зображення повністю відповідним */
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
@@ -78,7 +78,7 @@ ol {
     screen and (min-resolution: 2ddpx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 375px) and (max-width: 834px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/mobile/hero_bg@2x-mob.webp");
+      background-image: url('../images/RETINA/hero/mobile/hero_bg@2x-mob.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -88,7 +88,7 @@ ol {
     screen and (min-resolution: 3dppx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 375px) and (max-width: 834px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/mobile/hero_bg@3x-mob.webp");
+      background-image: url('../images/RETINA/hero/mobile/hero_bg@3x-mob.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -103,7 +103,7 @@ ol {
   .sec-hero {
     height: 100vh;
     margin-bottom: 100px;
-    background-image: url("../images/hero/hero_bg-tab.webp");
+    background-image: url('../images/hero/hero_bg-tab.webp');
     background-size: cover; /* Робить зображення повністю відповідним */
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
@@ -112,7 +112,7 @@ ol {
     screen and (min-resolution: 2ddpx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 835px) and (max-width: 1439px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/tablet/hero_bg@2x-tab.webp");
+      background-image: url('../images/RETINA/hero/tablet/hero_bg@2x-tab.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -122,7 +122,7 @@ ol {
     screen and (min-resolution: 3dppx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 835px) and (max-width: 1439px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/tablet/hero_bg@3x-tab.webp");
+      background-image: url('../images/RETINA/hero/tablet/hero_bg@3x-tab.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -165,7 +165,7 @@ ol {
   }
 
   .navigation-link-item {
-    font-family: "Lato";
+    font-family: 'Lato';
     font-weight: 700;
     font-size: 18px;
     line-height: 1.4;
@@ -181,7 +181,7 @@ ol {
   .sec-hero {
     height: 100vh;
     margin-bottom: 113px;
-    background-image: url("../images/hero/hero_bg-desk.webp");
+    background-image: url('../images/hero/hero_bg-desk.webp');
     background-size: cover; /* Робить зображення повністю відповідним */
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
@@ -190,7 +190,7 @@ ol {
     screen and (min-resolution: 2ddpx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/desktop/hero_bg@2x-desk.webp");
+      background-image: url('../images/RETINA/hero/desktop/hero_bg@2x-desk.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -200,7 +200,7 @@ ol {
     screen and (min-resolution: 3dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
     .sec-hero {
-      background-image: url("../images/RETINA/hero/desktop/hero_bg@3x-desk.webp");
+      background-image: url('../images/RETINA/hero/desktop/hero_bg@3x-desk.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -233,7 +233,7 @@ ol {
   }
 
   .ukraine::after {
-    content: "Ukraine";
+    content: 'Ukraine';
     position: absolute;
     top: 80%;
     left: 0;
@@ -304,7 +304,7 @@ ol {
   }
 
   .sec-our-tours-title {
-    font-family: "Jomolhari";
+    font-family: 'Jomolhari';
     font-weight: 400;
     font-size: 64px;
     line-height: 1.4;
@@ -317,14 +317,17 @@ ol {
   .sec-gallery {
     position: relative;
     height: 711px;
-    /* display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px; */
   }
 
-  .wrapper {
-    min-height: 100%;
+  /* .swiper {
+    width: 80%;
+  } */
+
+  .swiper-slide img {
+    /* width: 100%; */
+    width: 400px;
+    height: 494px;
+    border-radius: 4px;
   }
 
   .sec-gallery-title {
@@ -338,8 +341,30 @@ ol {
     color: #fff;
   }
 
-  .image-slider {
-    padding: 0;
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .arrow {
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  .arrow:hover,
+  .arrow.active {
+    stroke: yellow; /* Колір при наведенні або активному стані */
   }
 
   /* .sec-gallery h1 {
@@ -360,7 +385,7 @@ ol {
     position: relative;
     height: 698px;
     background: linear-gradient(360deg, #141a19 0%, rgba(0, 0, 0, 0) 100%),
-      linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 100%), url("../images/reviews/reviews_bg-desk.webp");
+      linear-gradient(180deg, #141a19 0%, rgba(0, 0, 0, 0) 100%), url('../images/reviews/reviews_bg-desk.webp');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -382,7 +407,7 @@ ol {
   /* sec-Start-travel */
   .sec-start-travel {
     height: 840px;
-    background: url("../images/start-travel/wheat_bg-desk.webp");
+    background: url('../images/start-travel/wheat_bg-desk.webp');
     background-repeat: no-repeat;
   }
 
@@ -417,7 +442,7 @@ ol {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url("/images/png/free-icon-pine.webp") no-repeat center center;
+    background: url('/images/png/free-icon-pine.webp') no-repeat center center;
     background-size: contain;
     border: none;
   }
