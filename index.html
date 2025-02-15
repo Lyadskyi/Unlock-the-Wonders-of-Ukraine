@@ -25,7 +25,7 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="navigation-link-item">
-              <a class="nav-link" href="">Contacts</a>
+              <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +38,8 @@
         <div class="hero">
           <h1 class="sec-hero-title">Unlock the Wonders of <span class="ukraine">Ukraine</span></h1>
         </div>
-        <a class="btn-link" href="#our-tours"><button class="btn-hero">Our tours</button></a>
+        <!-- <a class="btn-link" href="#our-tours"><button class="btn-hero">Our tours</button></a> -->
+        <a class="btn-hero" href="#our-tours">Our tours</a>
         <ul class="social-network-menu">
           <li class="social-network-item">
             <a class="social-network-link" href="">
@@ -80,7 +81,7 @@
 
     <!-- sec-About-us -->
     <section class="sec-about-us section" id="about-us">
-      <h1>About us</h1>
+      <h2>About us</h2>
       <div class="container about-us">
         <p class="description">
           Welcome to our travel agency in Ukraine! We are a locally owned and operated travel agency that specializes in
@@ -101,14 +102,14 @@
     <!-- sec-Our-tours -->
     <section class="sec-our-tours section" id="our-tours">
       <div class="container">
-        <h1 class="sec-our-tours-title">Our tours</h1>
+        <h2 class="sec-our-tours-title">Our tours</h2>
       </div>
     </section>
 
     <!-- sec-Gallery -->
     <section class="sec-gallery section" id="gallery">
       <div class="swiper container">
-        <h1 class="sec-gallery-title">Gallery</h1>
+        <h2 class="sec-gallery-title">Gallery</h2>
         <!-- Slider main container -->
         <div class="swiper-container image-slider">
           <!-- Additional required wrapper -->
@@ -169,7 +170,7 @@
     <!-- sec-Reviews -->
     <section class="sec-reviews section" id="reviews">
       <div class="container">
-        <h1 class="sec-reviews-title">Reviews</h1>
+        <h2 class="sec-reviews-title">Reviews</h2>
       </div>
     </section>
 
@@ -181,15 +182,32 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <ul>
-          <li>About us</li>
-          <li>Tours</li>
-          <li>Gallery</li>
-          <li>Contacts</li>
-        </ul>
-        <p>© All Rights Reserved</p>
+    <footer>
+      <div class="footer container">
+        <div class="footer-logo-nav-contacts">
+          <img src="./images/gallery/desktop/stone-fortress-desk.jpg" width="396" height="192" alt="Stone fortress" />
+          <ul class="footer-navigation">
+            <li class="footer-navigation-item"><a class="nav-link" href="#about-us">About us</a></li>
+            <li class="footer-navigation-item"><a class="nav-link" href="#our-tours">Tours</a></li>
+            <li class="footer-navigation-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="footer-navigation-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          </ul>
+          <address id="contacts">
+            <ul class="footer-contacts">
+              <li class="footer-contacts-item"><a href="tel:+380971231111">+38097-123-11-11</a></li>
+              <li class="footer-contacts-item">
+                <a href="mailto:WondersOfUkraine@gmail.com">WondersOfUkraine@gmail.com</a>
+              </li>
+              <li class="footer-contacts-item">Lviv, Zaporyzhka, 198</li>
+            </ul>
+          </address>
+          <ul class="social-network">
+            <li class="social-network-item">Іконка</li>
+            <li class="social-network-item">Іконка</li>
+            <li class="social-network-item">Іконка</li>
+          </ul>
+        </div>
+        <div class="footer-all-right"><p>© All Rights Reserved</p></div>
 
         <div id="back_to_top" class="back-to-top"></div>
       </div>
@@ -199,3 +217,5 @@
     <script src="main.js"></script>
   </body>
 </html>
+
+<div class="footer-logo"></div>
