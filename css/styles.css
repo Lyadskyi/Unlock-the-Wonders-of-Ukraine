@@ -70,8 +70,8 @@ a {
 /* -------------------- MOBILE -------------------- */
 
 @media (min-width: 375px) and (max-width: 834px) {
-  /* sec-Hero */
-  .sec-hero {
+  /* SECTION HERO */
+  .sec_hero {
     height: 100vh;
     margin-bottom: 100px;
     background-image: url('../images/hero/hero_bg-mob.webp');
@@ -82,7 +82,7 @@ a {
   @media screen and (min-resolution: 192dpi) and (min-width: 375px) and (max-width: 834px),
     screen and (min-resolution: 2ddpx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 375px) and (max-width: 834px) {
-    .sec-hero {
+    .sec_hero {
       background-image: url('../images/RETINA/hero/mobile/hero_bg@2x-mob.webp');
       background-size: cover;
       background-repeat: no-repeat;
@@ -92,7 +92,7 @@ a {
   @media screen and (min-resolution: 288dpi) and (min-width: 375px) and (max-width: 834px),
     screen and (min-resolution: 3dppx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 375px) and (max-width: 834px) {
-    .sec-hero {
+    .sec_hero {
       background-image: url('../images/RETINA/hero/mobile/hero_bg@3x-mob.webp');
       background-size: cover;
       background-repeat: no-repeat;
@@ -104,8 +104,8 @@ a {
 /* -------------------- TABLET -------------------- */
 
 @media (min-width: 835px) and (max-width: 1439px) {
-  /* sec-Hero */
-  .sec-hero {
+  /* SECTION HERO */
+  .sec_hero {
     height: 100vh;
     margin-bottom: 100px;
     background-image: url('../images/hero/hero_bg-tab.webp');
@@ -116,7 +116,7 @@ a {
   @media screen and (min-resolution: 192dpi) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-resolution: 2ddpx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 835px) and (max-width: 1439px) {
-    .sec-hero {
+    .sec_hero {
       background-image: url('../images/RETINA/hero/tablet/hero_bg@2x-tab.webp');
       background-size: cover;
       background-repeat: no-repeat;
@@ -126,7 +126,7 @@ a {
   @media screen and (min-resolution: 288dpi) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-resolution: 3dppx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 835px) and (max-width: 1439px) {
-    .sec-hero {
+    .sec_hero {
       background-image: url('../images/RETINA/hero/tablet/hero_bg@3x-tab.webp');
       background-size: cover;
       background-repeat: no-repeat;
@@ -139,37 +139,44 @@ a {
 
 @media screen and (min-width: 1440px) {
   .container {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .section {
     margin-bottom: 100px;
   }
 
-  /* Header */
+  /* HEADER */
   .header {
     position: absolute;
     left: 0;
     width: 100%;
     padding-top: 10px;
-    display: flex;
-    justify-content: end;
     background: rgba(0, 0, 0, 0);
   }
 
-  .navigation-header {
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logotype_icon {
+    fill: #fff;
+  }
+
+  .nav_header {
     display: flex;
     align-items: center;
     justify-content: end;
   }
 
-  .navigation-list {
+  .nav_list {
     display: flex;
     gap: 64px;
   }
 
-  .navigation-link-item {
+  .nav_list_item {
     font-family: 'Lato';
     font-weight: 700;
     font-size: 18px;
@@ -177,13 +184,13 @@ a {
     letter-spacing: 0.01em;
   }
 
-  .nav-link {
+  .nav_link {
     text-decoration: none;
     color: inherit;
   }
 
-  /* sec-Hero */
-  .sec-hero {
+  /* SECTION HERO */
+  .sec_hero {
     height: 100vh;
     margin-bottom: 113px;
     background-image: url('../images/hero/hero_bg-desk.webp');
@@ -194,7 +201,7 @@ a {
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2ddpx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-    .sec-hero {
+    .sec_hero {
       background-image: url('../images/RETINA/hero/desktop/hero_bg@2x-desk.webp');
       background-size: cover;
       background-repeat: no-repeat;
@@ -204,7 +211,7 @@ a {
   @media screen and (min-resolution: 288dpi) and (min-width: 1440px),
     screen and (min-resolution: 3dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
-    .sec-hero {
+    .sec_hero {
       background-image: url('../images/RETINA/hero/desktop/hero_bg@3x-desk.webp');
       background-size: cover;
       background-repeat: no-repeat;
@@ -218,14 +225,13 @@ a {
     justify-content: center;
   }
 
-  .sec-hero-title {
+  .sec_hero_title {
     padding-top: 144px;
     width: 468px;
     font-size: 48px;
     line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #fff;
   }
 
   .ukraine {
@@ -234,7 +240,6 @@ a {
     font-size: 128px;
     line-height: 1.4;
     letter-spacing: 0.01em;
-    color: #fff;
   }
 
   .ukraine::after {
@@ -251,7 +256,7 @@ a {
     -webkit-text-fill-color: transparent;
   }
 
-  .btn-hero {
+  .btn_hero {
     /* position: absolute; */
     width: 50vw;
     padding-left: 633px;
@@ -267,54 +272,60 @@ a {
     background: #394014;
     color: #fff;
   }
-
-  /* .btn-hero {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
+  .btn_hero:hover {
+    background-color: #444d16;
   }
 
-  .btn-hero:hover {
-    background-color: #0056b3;
-  } */
-
-  .btn-link {
-    text-decoration: none; /* Прибирає підкреслення */
-    color: inherit; /* Залишає колір тексту, як у батьківського елемента */
+  .social_networks_container {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .link-icon {
-    fill: aqua;
+  .social_networks_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
-  /* sec-About-us */
-  .sec-about-us {
+  .social_networks_item use {
+    fill: #fff;
+  }
+
+  /* SECTION ABOUT US */
+  .sec_about_us {
     height: 573px;
+    background-image: url(../images/png/map-about-us-desk.png);
+    background-repeat: no-repeat; /* Забороняє повторення */
+    background-position: center; /* Центрує зображення */
   }
 
-  .about-us {
+  .sec_about_us_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    padding: 71px 0 64px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+  }
+
+  .about_us {
     display: flex;
     padding: 0 200px;
     width: 1024px;
-    height: 338px;
     gap: 32px;
   }
 
   .description {
+    font-family: 'Lato';
+    width: 496px;
+    height: 184px;
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.01em;
-    color: #fff;
   }
 
-  /* sec-Our-tours */
+  /* SECTION OUR TOURS */
   .sec-our-tours {
     position: relative; /* Контейнер для абсолютного позиціонування */
     height: 1271px;
@@ -335,7 +346,7 @@ a {
     color: #fff;
   }
 
-  /* sec-Gallery */
+  /* SECTION GALLERY */
 
   .sec-gallery {
     position: relative;
@@ -403,7 +414,7 @@ a {
     border-radius: 4px;
   } */
 
-  /* sec-Reviews */
+  /* SECTION REVIEWS */
   .sec-reviews {
     position: relative;
     height: 698px;
@@ -427,14 +438,14 @@ a {
     color: #fff;
   }
 
-  /* sec-Start-travel */
+  /* SECTION START TRAVEL */
   .sec-start-travel {
     height: 840px;
     background: url('../images/start-travel/wheat_bg-desk.webp');
     background-repeat: no-repeat;
   }
 
-  /* Footer */
+  /* FOOTER */
   .footer {
     height: 324px;
   }
@@ -483,7 +494,7 @@ a {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url('/images/png/free-icon-pine.webp') no-repeat center center;
+    background: url('/images/png/free-icon-pine.png') no-repeat center center;
     background-size: contain;
     border: none;
   }
