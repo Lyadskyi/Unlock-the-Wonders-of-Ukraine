@@ -83,7 +83,7 @@ a {
     screen and (min-resolution: 2ddpx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 375px) and (max-width: 834px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/mobile/hero_bg@2x-mob.webp');
+      background-image: url('../images/RETINA/hero/hero_bg@2x-mob.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -93,7 +93,7 @@ a {
     screen and (min-resolution: 3dppx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 375px) and (max-width: 834px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/mobile/hero_bg@3x-mob.webp');
+      background-image: url('../images/RETINA/hero/hero_bg@3x-mob.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -117,7 +117,7 @@ a {
     screen and (min-resolution: 2ddpx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 835px) and (max-width: 1439px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/tablet/hero_bg@2x-tab.webp');
+      background-image: url('../images/RETINA/hero/hero_bg@2x-tab.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -127,7 +127,7 @@ a {
     screen and (min-resolution: 3dppx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 835px) and (max-width: 1439px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/tablet/hero_bg@3x-tab.webp');
+      background-image: url('../images/RETINA/hero/hero_bg@3x-tab.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -159,10 +159,6 @@ a {
   .header_container {
     display: flex;
     justify-content: space-between;
-  }
-
-  .logotype_icon {
-    fill: #fff;
   }
 
   .nav_header {
@@ -202,7 +198,7 @@ a {
     screen and (min-resolution: 2ddpx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/desktop/hero_bg@2x-desk.webp');
+      background-image: url('../images/RETINA/hero/hero_bg@2x-desk.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -212,7 +208,7 @@ a {
     screen and (min-resolution: 3dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/desktop/hero_bg@3x-desk.webp');
+      background-image: url('../images/RETINA/hero/hero_bg@3x-desk.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -226,7 +222,7 @@ a {
   }
 
   .sec_hero_title {
-    padding-top: 144px;
+    margin-top: 206px;
     width: 468px;
     font-size: 48px;
     line-height: 1.4;
@@ -240,6 +236,7 @@ a {
     font-size: 128px;
     line-height: 1.4;
     letter-spacing: 0.01em;
+    top: -46px;
   }
 
   .ukraine::after {
@@ -256,22 +253,26 @@ a {
     -webkit-text-fill-color: transparent;
   }
 
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+  }
+
   .btn_hero {
-    /* position: absolute; */
-    width: 50vw;
-    padding-left: 633px;
+    position: relative;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
     padding: 16px 52px;
-    /* display: block; */
     border-radius: 4px;
-    text-decoration: none;
-    border: none;
-    font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.01em;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background: #394014;
-    color: #fff;
   }
+
   .btn_hero:hover {
     background-color: #444d16;
   }
@@ -287,14 +288,46 @@ a {
     gap: 15px;
   }
 
+  .social_networks_item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .social_networks_item svg {
+    width: 100%;
+    height: 100%;
+  }
+
   .social_networks_item use {
     fill: #fff;
   }
 
+  .social_networks_icon:hover {
+    stroke: #394014;
+  }
+
+  /* =========================== */
+
+  /* .social_networks_link {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  .social_networks_link svg {
+    width: 100%;
+    height: 100%;
+  } */
+
+  /* =========================== */
+
   /* SECTION ABOUT US */
   .sec_about_us {
     height: 573px;
-    background-image: url(../images/png/map-about-us-desk.png);
+    background-image: url(../images/about-us/map-about-us-desk.png);
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
   }
@@ -449,6 +482,7 @@ a {
   .footer {
     height: 324px;
   }
+
   .footer-logo-nav-contacts {
     display: flex;
     margin-bottom: 64px;
@@ -494,7 +528,7 @@ a {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url('/images/png/free-icon-pine.png') no-repeat center center;
+    background: url('/images/png/two-pines.png') no-repeat center center;
     background-size: contain;
     border: none;
   }
