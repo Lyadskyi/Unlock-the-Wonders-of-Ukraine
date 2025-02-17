@@ -15,12 +15,24 @@ $('#back_to_top').click(function () {
 });
 
 new Swiper('.image-slider', {
-  slidesPerView: 3.5,
-  spaceBetween: 16,
+  autoHeight: true, // Автовисота
+  centeredSlides: false, // Активний слайд по центру
+  grabCursor: true, // Долонька - курсор перетягування
+  loop: false, // Нескінченний слайдер
+  simulateTouch: true, // false - вимикає свайп
+  slidesPerView: 3.5, // Кількість слайдів для показу
+  spaceBetween: 16, // Відступ між слайдами
+  touchRatio: 1, // Швидкість свайпу: 1- за замовчуванням, 0 - вимикає свайп
+  slideToClickedSlide: true, // Перемикання при натисканні на слайд
+  keyboard: {
+    enabled: true, // Керування клавіатурою: увімкнути/вимкнути
+    onlyInViewport: true, // Тільки, коли слайдер в межах в'юпорту
+    pageUpDown: true, // Керування клавішами: PgUp, PgDn
+  },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
+    clickable: true, // Клікабельність булетів
+    dynamicBullets: true, // Динамічність булетів
   },
 });
 

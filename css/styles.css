@@ -405,8 +405,7 @@ a {
   }
 
   .swiper-slide img {
-    width: 100%;
-    /* width: 400px; */
+    width: 400px;
     height: 494px;
     border-radius: 4px;
   }
@@ -441,15 +440,14 @@ a {
   }
 
   .image-slider .swiper-pagination {
-    /* bottom: 0; */
-    top: -100;
+    bottom: 0px !important;
   }
 
   .image-slider .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     line-height: 20px;
-    font-size: 140px;
+    font-size: 50px;
     background-color: #fff;
   }
 
