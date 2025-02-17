@@ -14,9 +14,15 @@ $('#back_to_top').click(function () {
   $('body,html').animate({ scrollTop: 0 }, 10);
 });
 
-const swiperImageSlider = new Swiper('.image-slider', { slidesPerView: 3, spaceBetween: 16 });
-
-const swiperMain = new Swiper('.swiper', { slidesPerView: 3, spaceBetween: 16 });
+new Swiper('.image-slider', {
+  slidesPerView: 3.5,
+  spaceBetween: 16,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
 
 const arrows = document.querySelectorAll('.arrow');
 

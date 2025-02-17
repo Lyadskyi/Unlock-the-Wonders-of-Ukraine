@@ -105,10 +105,10 @@
       </section>
 
       <!-- SECTION GALLERY -->
-      <section class="sec-gallery section" id="gallery">
+      <section class="sec_gallery section" id="gallery">
         <div class="swiper container">
           <!-- Title h2 -->
-          <h2 class="sec-gallery-title">Gallery</h2>
+          <h2 class="sec_gallery_title">Gallery</h2>
           <!-- Slider main container -->
           <div class="swiper-container image-slider">
             <!-- Additional required wrapper -->
@@ -157,11 +157,17 @@
             </div>
             <!-- Navigation buttons -->
             <div class="swiper-button-prev">
-              <svg class="link-icon" width="24" height="24"><use href="./images/icons/#icon-instagram"></use></svg>
+              <svg class="link-icon">
+                <use href="./images/icons/sprite.svg#icon_arrow_left"></use>
+              </svg>
             </div>
             <div class="swiper-button-next">
-              <svg class="link-icon" width="24" height="24"><use href="./images/icons/#icon-instagram"></use></svg>
+              <svg class="link-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon_arrow_right"></use>
+              </svg>
             </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
