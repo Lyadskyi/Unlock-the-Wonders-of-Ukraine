@@ -74,26 +74,28 @@ a {
   .sec_hero {
     height: 100vh;
     margin-bottom: 100px;
-    background-image: url('../images/hero/hero_bg-mob.webp');
+    background-image: url('../images/hero/hero-bg-mob.jpg');
     background-size: cover; /* Робить зображення повністю відповідним */
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
   }
+
   @media screen and (min-resolution: 192dpi) and (min-width: 375px) and (max-width: 834px),
     screen and (min-resolution: 2ddpx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 375px) and (max-width: 834px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/hero_bg@2x-mob.webp');
+      background-image: url('../images/RETINA/hero/hero-bg@2x-mob.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
   }
+
   @media screen and (min-resolution: 288dpi) and (min-width: 375px) and (max-width: 834px),
     screen and (min-resolution: 3dppx) and (min-width: 375px) and (max-width: 834px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 375px) and (max-width: 834px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/hero_bg@3x-mob.webp');
+      background-image: url('../images/RETINA/hero/hero-bg@3x-mob.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -108,26 +110,28 @@ a {
   .sec_hero {
     height: 100vh;
     margin-bottom: 100px;
-    background-image: url('../images/hero/hero_bg-tab.webp');
+    background-image: url('../images/hero/hero-bg-tab.jpg');
     background-size: cover; /* Робить зображення повністю відповідним */
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
   }
+
   @media screen and (min-resolution: 192dpi) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-resolution: 2ddpx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 835px) and (max-width: 1439px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/hero_bg@2x-tab.webp');
+      background-image: url('../images/RETINA/hero/hero-bg@2x-tab.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
   }
+
   @media screen and (min-resolution: 288dpi) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-resolution: 3dppx) and (min-width: 835px) and (max-width: 1439px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 835px) and (max-width: 1439px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/hero_bg@3x-tab.webp');
+      background-image: url('../images/RETINA/hero/hero-bg@3x-tab.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -180,35 +184,32 @@ a {
     letter-spacing: 0.01em;
   }
 
-  .nav_link {
-    text-decoration: none;
-    color: inherit;
-  }
-
   /* SECTION HERO */
   .sec_hero {
     height: 100vh;
     margin-bottom: 113px;
-    background-image: url('../images/hero/hero_bg-desk.webp');
+    background-image: url('../images/hero/hero-bg-desk.jpg');
     background-size: cover; /* Робить зображення повністю відповідним */
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
   }
+
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
     screen and (min-resolution: 2ddpx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/hero_bg@2x-desk.webp');
+      background-image: url('../images/RETINA/hero/hero-bg@2x-desk.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
   }
+
   @media screen and (min-resolution: 288dpi) and (min-width: 1440px),
     screen and (min-resolution: 3dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
     .sec_hero {
-      background-image: url('../images/RETINA/hero/hero_bg@3x-desk.webp');
+      background-image: url('../images/RETINA/hero/hero-bg@3x-desk.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -222,7 +223,7 @@ a {
   }
 
   .sec_hero_title {
-    margin-top: 206px;
+    margin-top: 193px;
     width: 468px;
     font-size: 48px;
     line-height: 1.4;
@@ -242,7 +243,7 @@ a {
   .ukraine::after {
     content: 'Ukraine';
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 0;
     width: 100%;
     transform: scaleY(-1);
@@ -306,30 +307,37 @@ a {
   }
 
   .social_networks_icon:hover {
-    stroke: #394014;
+    stroke: #444d16;
   }
-
-  /* =========================== */
-
-  /* .social_networks_link {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-  }
-
-  .social_networks_link svg {
-    width: 100%;
-    height: 100%;
-  } */
-
-  /* =========================== */
 
   /* SECTION ABOUT US */
   .sec_about_us {
     height: 573px;
-    background-image: url(../images/about-us/map-about-us-desk.png);
+    background-image: url('../images/about-us/about-us-bg-desk.png');
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center; /* Центрує зображення */
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .sec_about_us {
+      background-image: url('../images/RETINA/about-us/about-us-bg@2x-desk.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+    screen and (min-resolution: 3dppx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+    .sec_about_us {
+      background-image: url('../images/RETINA/about-us/about-us-bg@3x-desk.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .sec_about_us_title {
@@ -472,10 +480,32 @@ a {
   }
 
   /* SECTION START TRAVEL */
-  .sec-start-travel {
+  .sec_start_travel {
     height: 840px;
-    background: url('../images/start-travel/wheat_bg-desk.webp');
+    background: url('../images/start-travel/start-travel-desk.jpg');
     background-repeat: no-repeat;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .sec_start_travel {
+      background-image: url('../images/RETINA/start-travel/start-travel@2x-desk.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+    screen and (min-resolution: 3dppx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+    .sec_start_travel {
+      background-image: url('../images/RETINA/start-travel/start-travel@3x-desk.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   /* FOOTER */
